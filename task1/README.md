@@ -6,6 +6,6 @@ The suspicion is that the database services are responding slowly.
 Use [jd-gui decompiler](http://jd.benow.ca/) to inspect the application's binaries and answer the following:
 
 - What is the class name, method name, line number where following happens:
- - Servlet initiates the database processing
- - Database connection is obtained
- - SQL Query is executed
+  - Servlet initiates the database processing
+  - Database connection is obtained
+  - SQL Query is executed
