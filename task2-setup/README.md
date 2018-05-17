@@ -28,6 +28,6 @@ You can start wildfly by executing *start.sh[bat]* script and once you are done 
 ## Task B - Starting the environment for the first time
 Start the environment by executing *start.sh[bat]* . Be patient - when executed for the first time, this command will actually download WildFly and MariaDB binaries onto your local PC. Once the WildFly is started open your browser and navigate to
 ```
-http://localhost:8080/task2-binaries/GetData
+http://localhost:8080/task2-binaries/
 ```
 How long the SQL query execution took?
