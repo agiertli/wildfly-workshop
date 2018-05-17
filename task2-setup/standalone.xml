@@ -152,10 +152,6 @@
                     <connection-url>jdbc:mariadb://${env.DB_PORT_3306_TCP_ADDR}:3306/workshopdb</connection-url>
                     <driver-class>org.mariadb.jdbc.Driver</driver-class>
                     <driver>mariadb-java-client-1.4.6.jar</driver>
-                    <pool>
-                        <min-pool-size>50</min-pool-size>
-                        <max-pool-size>70</max-pool-size>
-                    </pool>
                     <security>
                         <user-name>student</user-name>
                         <password>student</password>
