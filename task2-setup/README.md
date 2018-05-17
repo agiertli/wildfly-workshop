@@ -13,10 +13,9 @@ writer.close();
 Unfortunately the timestamp is not printed on the stdout but its part of the servlet response.
 Let's add static html resource into our application which will print the timestamp before SQL is invoked and the same html page will also receive
 the timestamp printed from our servlet.
-Use [jar](https://docs.oracle.com/javase/tutorial/deployment/jar/update.html) command for updating our application. 
  
 ## Task A - update the binary
- - Add index.thml file under the root folder of our application
+ - By utilizing [jar command](https://docs.oracle.com/javase/tutorial/deployment/jar/update.html), add index.thml file under the root folder of our application
  - Verify the success of this operation by using jd-gui
 
 ## Setup
