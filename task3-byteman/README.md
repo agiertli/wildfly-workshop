@@ -49,7 +49,7 @@ byteman-download-4.0.2
     - Print something after *getConnection()* is called
     - You can't use *System.out.println()*
     - Use the logger which is injected into the class variable *logger*
-    - You can't use info log leve. Pick suitable [log level](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Level.html) for debugging
+    - You can't use info log level. Pick suitable [log level](https://docs.oracle.com/javase/8/docs/api/java/util/logging/Level.html) for debugging
     - To access class variable inside a byteman rule you need to use *$this.someVariable* keyword
     - Use suitable [location specifier](https://github.com/bytemanproject/byteman/blob/master/docs/asciidoc/src/main/asciidoc/chapters/Byteman-Rule-Language.adoc)
     - Be brave. Don't look into the solution file just yet
