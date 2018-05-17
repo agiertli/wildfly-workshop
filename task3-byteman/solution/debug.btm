@@ -1,0 +1,15 @@
+RULE debuggingSlowServlet1
+CLASS org.fel.cvut.threaddump.DBService
+METHOD readData
+AT INVOKE getConnection
+IF TRUE
+DO $this.logger.finest("[byteman] before getConnection()");
+ENDRULE
+
+RULE debuggingSlowServlet2
+CLASS org.fel.cvut.threaddump.DBService
+METHOD readData
+AFTER INVOKE getConnection
+IF TRUE
+DO $this.logger.finest("[byteman] after getConnection()");
+ENDRULE
