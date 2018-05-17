@@ -56,7 +56,7 @@ byteman-download-4.0.2
   
  - Start the environment by executing *start.sh[bat]* script
  - Open two terminal windows and execute *connectToWildfly.sh[bat]* in both of them
- - In one termianl window let's print the WildFly log:
+ - In one terminal window let's print the WildFly log:
  ```
  tail -f wildfly/standalone/log/server.log
  ```
