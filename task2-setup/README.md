@@ -13,17 +13,16 @@ writer.close();
 Unfortunately the timestamp is not printed on the stdout but its part of the servlet response.
 Let's add static html resource into our application which will print the timestamp before SQL is invoked and the same html page will also receive
 the timestamp printed from our servlet.
-Use [jar](https://docs.oracle.com/javase/tutorial/deployment/jar/update.html) command for updating our application. 
  
 ## Task A - update the binary
- - Add index.thml file under the root folder of our application
+ - By utilizing [jar command](https://docs.oracle.com/javase/tutorial/deployment/jar/update.html), add index.thml file under the root folder of our application
  - Verify the success of this operation by using jd-gui
 
 ## Setup
 
 Now let's get familiarize with our environment. We will be using dockerized WildFly 12, which is fully certified Java EE application server.
 Feel free to explore various scripts - Dockerfile, start.sh, cleanup.sh, etc. Our WildFly docker image is linked with MariaDB image, which we need
-for simulating long running database queries. Once started, WildFly is accessible on port 8080.
+for simulating long running database queries. Once started, WildFly is accessible on port localhost:8080. WildFly management interface is occupying port 9990 and MariaDB uses port 3306. Make sure all these ports are not used on your machine before you attempt to start our environent.
 You can start wildfly by executing *start.sh[bat]* script and once you are done testing, make sure to execute *cleanup.sh[bat]*
 
 ## Task B - Starting the environment for the first time
