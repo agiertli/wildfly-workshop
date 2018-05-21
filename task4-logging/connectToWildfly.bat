@@ -1,0 +1,1 @@
+docker exec -it wildfly-task4 bash 
